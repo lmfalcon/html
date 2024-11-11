@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- action表示提交位置，一般是一个url -->
+    <form action="#">
+        <!-- 可用span也可以用label -->
+         <!-- label中for 对应input中id -->
+        <label for="username">用户名：</label>
+        <!-- placeholder 输入时不见 -->
+        <input type="text" id = "username" placeholder="请输入用户"><br><br>
+        <label for="password">密码：</label>
+        <!-- value相当于默认输入 -->
+        <!-- <input type="password" id = "password" value="请输入内容"><br><br> -->
+        <input type="password" id = "password" placeholder="请输入密码"><br><br>
+        <label for="">性别</label>
+        <!-- radio 里只要name相同就可以实现单选 -->
+        <input type="radio" name = "gender">男
+        <input type="radio" name = "gender">女
+        <input type="radio" name = "gender">其他<br><br>
+
+
+        <label>爱好：</label>
+        <input type="checkbox" name = "hobby">唱
+        <input type="checkbox" name = "hobby">跳
+        <input type="checkbox" name = "hobby">rap
+        <input type="checkbox" name = "hobby">篮球<br><br>
+        
+
+        <input type="submit" value="上传">
+    </form>
+</body>
+</html>
