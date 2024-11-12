@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 常用属性</title>
+    <style>
+        .block{
+            background-color: aqua;
+            width: 200px;
+            height: 100px;
+        }
+        .inline{
+            background-color: aquamarine;
+        }
+        .inline-block{
+            width: 200px;
+            height: 100px;
+        }
+        .div-inline{
+            display: inline;
+            background-color: blue;
+        }
+        .span-block{
+            display: block;
+            background-color: tomato;
+            width: 200px;
+            height: 200px;
+        }
+        .span-inline-block{
+            display: inline-block;
+            background-color: tomato;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font: bolder 50px 'kaiti';">
+        这是一个font复合属性示例
+    </h1>
+    <p style="line-height: 40px;">这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本</p>
+    <!-- 块元素BLOCK，行内元素inline,行内块元素inline-block -->
+    <div class="block">这是一个块级元素</div>
+    <div class="block">这是一个块级元素</div>
+    <span class="inline">这是一个行内元素</span>
+    <img src="./hand.png" alt="" class="inline-block">
+    <img src="./hand.png" alt="" class="inline-block">
+    <!-- 三种元素的相互转换 -->
+    <div>display</div>
+    <div style="display: inline; background-color: aquamarine;">这是一个转换为行内元素的div</div>
+    <div class="div-inline">这是一个转换为行内元素的块</div>
+    <span class="span-block">这是一个转换为块元素的行内元素span</span>
+    <span class="span-inline-block">这是一个转换为行内块元素的行内元素span</span><span>衬托一下</span>
+</body>
+</html>
