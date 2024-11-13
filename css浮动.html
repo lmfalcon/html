@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动</title>
+    <style>
+        .father{
+            background-color: aquamarine;
+            /* height: 150px; */
+            border: 3px;
+            /* overflow: auto; 自动处理溢出部分内容*/
+            /* overflow:hiden; 隐藏溢出的部分 */
+            /* overflow: hidden; */
+            /* overflow: auto; */
+
+        }
+        /* 创建一个新的块格式化上下文BFC */
+        .father::after{
+            /* 创建一个空的伪元素 */
+            content: "";
+            /* 使其成为块级元素 */
+            display: block;
+            /* 清除左右浮动 */
+            clear: both;
+
+        }
+        .left-son{
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+            float: left;
+        }
+        .right-son{
+            width: 100px;
+            height: 100px;
+            background-color: yellowgreen;
+            float: right;;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="left-son">左浮动</div>
+        <div class="left-son">左浮动</div>
+        <div class="left-son">左浮动</div>
+        <div class="left-son">左浮动</div>
+        <div class="left-son">左浮动</div>
+        <div class="left-son">左浮动</div>
+        <div class="right-son">右浮动</div>
+        <div class="right-son">右浮动</div>
+        <div class="right-son">右浮动</div>
+        <div class="right-son">右浮动</div>
+        <div class="right-son">右浮动</div>
+    </div>
+    <p>这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本</p>
+</body>
+</html>
