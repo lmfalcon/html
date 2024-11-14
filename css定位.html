@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位</title>
+    <style>
+        .box1{
+            height: 350px;
+            background-color: aqua;
+        }
+        .box2{
+            height: 350px;
+            background-color: antiquewhite;
+        }
+        .box-normal{
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+
+        }
+        .box-relative{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            position: relative;
+            /* 参照元素所在位置相对于需要调整元素位置，通过以下方式调节 */
+            left: ;
+            right: 20px; ;
+            top: 40px;
+            bottom: ;
+
+        }
+        .box-absolute{
+            width: 100px;
+            height: 100px;
+            background-color: goldenrod;
+            position: absolute;
+            /* 参照元素所在位置相对于需要调整元素位置，通过以下方式调节 */
+            left: ;
+            right: 100px; 
+            /* top: 600px; */
+            bottom: ;
+            /* 以第二个设定的地址为准 */
+            /* right: 100px;
+            top: 100px; */
+
+        }
+        .box-fixed{
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            position: fixed;
+            right: 0px;
+            top: 100px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>相对定位</h1>
+    <div class="box1">
+        <div class="box-normal"></div>
+        <div class="box-relative"></div>
+        <div class="box-normal"></div>
+
+    </div>
+    <h1>绝对定位</h1>
+    <div class="box2">
+        <div class="box-normal"></div>
+        <div class="box-absolute"></div>
+        <div class="box-normal"></div>
+    </div>
+    <h1>固定定位</h1>
+    <div class="box-fixed">
+
+    </div>
+</body>
+</html>
