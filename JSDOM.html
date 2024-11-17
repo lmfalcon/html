@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <div id="box1">这是一个ID选择器标签</div>
+    <div class="box2">这是一个类选择器标签</div>
+    <div>这是一个普通的div标签</div>
+    <button>点击按钮</button>
+    <!-- <a href="#">跳转链接</a> -->
+    <script>
+        // DOM document object model
+        var element_id = document.getElementById("box1")
+        console.log(element_id)
+        // 如果class类这些不唯一的会以数组的形式进行储存
+        var element_class = document.getElementsByClassName("box2")[0]
+        console.log(element_class)
+        var element_tag = document.getElementsByTagName("div")[2]
+        console.log(element_tag)
+        // 这下面一定注意引号和双引号交替使用
+        // innerHTML可以解析HTML语句但是innerTEXT不行，会直接显示内容即使是HTML语句
+        element_class.innerHTML = '<a href="#"> 跳转链接 </a> '
+        element_tag.innerText = "<a href='#'> 跳转链接 </a>"
+        element_tag.style.color = "red"
+        element_tag.style.fontSize = "20px"
+
+        // DOM属性绑定事件
+        var buttom_element = document.getElementsByTagName("button")[0]
+        console.log(buttom_element);
+        
+        // buttom_element.onclick = function(){
+        //     alert("DOM属性案件触发")
+        // }
+        // buttom_element.addEventListener("click",function(){
+        //     alert("通过addevetlistener触发按键")
+        // })
+        // 下面的click_event如果带括号会直接触发，不带括号反而是点击后触发，弹幕解释是传递函数的对象而不是返回值，类似python的装饰器
+        buttom_element.addEventListener("click",click_event)
+        function click_event(){
+            alert("通过addevetlistener触发按键")
+        }
+        // DOM对象的常用方法：
+        // appendchild() 把新的子节点添加到指定节点
+        // removechild() 删除子节点
+        // replacechild() 替换子节点
+        // insertbefore() 在指定的子节点前面插入新的子节点
+        // createattribute() 创建属性节点
+        // createelement() 创建元素节点
+        // createtextnode() 创建文本节点
+        // getattribute() 返回指定的属性值
+        // 其实想知道怎么做可以尝试用GPT类的软件生成，我们的主要目标是为了能看懂代码，学会如何秒是我们的需求，方便生成合适的代码
+
+    </script>
+</body>
+</html>
