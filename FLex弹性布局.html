@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            font-size: 10px;
+        }
+        .container{
+            background-color: aqua;
+            height: 40rem;
+            display: flex;
+            /* flex-direction: row-reverse;横向翻转 */
+            /* flex-direction: column-reverse;纵向翻转 */
+            /* flex-wrap: wrap-reverse;定义换行并翻转 */
+            /* justify-content: center;显示中心对称 */
+            /* align-items: center; 容器中心对齐*/
+            /* align-content: center;多轴线居中，开启flex-warp才有两排多轴线 */
+
+        }
+        .item{
+            width: 5rem;
+            font-size: 8rem;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- .item*6{$} tap后就生成下面六个语句 -->
+        <div class="item" style="background-color: yellowgreen;">1</div>
+        <div class="item" style="background-color: rgb(90, 172, 106);">2</div>
+        <div class="item" style="background-color: rgb(205, 109, 50);">3</div>
+        <div class="item" style="background-color: rgb(205, 50, 50);">4</div>
+        <div class="item" style="background-color: rgb(205, 78, 50);">5</div>
+        <div class="item" style="background-color: rgb(81, 50, 205);">6</div>
+    </div>
+<!-- vue.js
+ 微信小程序
+ 用vue开发微信小程序
+ uniapp一套代码运行到多个平台上 -->
+</body>
+</html>
